@@ -1,0 +1,51 @@
+import nltk, csv, numpy, sqlite3
+from nltk import word_tokenize 
+from nltk.corpus import stopwords
+
+my_stopwords = ['[sticker]']
+
+#make all words lowercase (.lower())
+
+#3394 = number of stickers out of 22174 total... = 15.3% stickers
+
+#opens file and breaks words into discrete strings
+file = open('line_chat_raw.csv')
+t = file.read();
+tokens = nltk.word_tokenize(t)
+text = nltk.Text(tokens)
+
+#generates chart of 100 most frequent words
+fd.plot(100, cumulative=False)
+line_chat_table = fd.tabulate(my_new_text)
+
+
+reader = csv.reader(open('line_chat_raw.csv' ))
+my_text = []
+with open()
+for line in reader:
+    for field in line:
+        tokens = word_tokenize(field)
+	my_text = my_text.append()
+	
+#removes [sticker]
+my_stopwords = ['[sticker]']
+stopwords = stopwords.words('english')
+my_new_text = [w for w in ]
+my_new_text = [w.lower() for w in text]
+
+#removes ()
+
+		
+#writes words to new file/location/db
+'''
+import csv
+
+training_set = []
+
+with open('line_chat_raw.csv') as csvfile:
+    reader = csv.DictReader(csvfile)
+    for row in reader:
+        training_set.append((row['Text'], row['Classification']))
+
+
+print(training_set)
